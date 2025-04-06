@@ -1,0 +1,181 @@
+.header {
+   display: flex;
+   justify-content: center;
+   height: 40px;
+   position: relative; /* Для позиционирования затемнения */
+   margin: 10px 0;
+}
+
+.container {
+   width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo {
+   font-weight: bold;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+}
+
+.logoIcon {
+   margin-right: 8px;
+}
+
+.nav a {
+   margin: 0 15px;
+   text-decoration: none;
+   color: black;
+   font-size: 16px;
+}
+
+.actions {
+   display: flex;
+   align-items: center;
+}
+
+.search {
+   display: flex;
+   align-items: center;
+   background-color: #fbeff1;
+   border-radius: 15px;
+   margin: 10px 0px;
+   height: 40px;
+}
+
+.search input {
+   border: none;
+   background: none;
+   outline: none;
+   margin-left: 5px;
+}
+
+.icon {
+   width: 18px;
+   height: 18px;
+}
+
+.iconButton {
+   background: #fbeff1;
+   border: none;
+   border-radius: 15px;
+   margin-left: 5px;
+   cursor: pointer;
+}
+
+.iconButton:hover {
+   background: #f0d6db;
+}
+
+.iconButton svg {
+   width: 32px;
+   height: 32px;
+}
+
+.avatar {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   margin-left: 5px;
+   background: none;
+}
+
+/* Бургер-меню */
+.burgerMenu {
+   display: none;
+   flex-direction: column;
+   cursor: pointer;
+   width: 30px;
+   height: 30px;
+}
+
+.burgerIcon {
+   width: 30px;
+   height: 4px;
+   background-color: #1b0d0f;
+   margin: 6px 0;
+}
+
+.nav {
+   display: flex;
+   align-items: center;
+}
+
+.nav a {
+   display: block;
+   padding: 15px 0;
+   text-align: center;
+}
+
+@media (max-width: 1200px) {
+   .logo {
+      font-weight: bold;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      margin-left: 10px;
+   }
+   .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-left: 5px;
+      background: none;
+      margin-right: 10px;
+   }
+}
+
+@media (max-width: 768px) {
+   .logo {
+      display: none; /* Скрываем лого на маленьких экранах */
+   }
+
+   .nav {
+      display: none;
+   }
+
+   .navOpen {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+      width: 250px;
+      height: 100%;
+      background-color: #ffffff;
+      z-index: 100;
+      padding-top: 60px;
+      text-align: center;
+      transition: transform 0.3s ease;
+   }
+   .nav a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+   }
+
+   .nav a:hover {
+      background-color: #f3e7e8;
+   }
+
+   .burgerMenu {
+      display: flex;
+      z-index: 101;
+   }
+
+   .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+      z-index: 99;
+   }
+}

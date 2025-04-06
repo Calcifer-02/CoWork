@@ -1,0 +1,331 @@
+.profile {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+
+   box-sizing: border-box;
+}
+
+.header {
+   text-align: center;
+   margin-bottom: 2.5rem;
+}
+
+.header h1 {
+   font-size: 2rem;
+   color: #1b0d0f;
+   margin: 0;
+}
+
+.profileSection {
+   display: flex;
+   flex-direction: column;
+   gap: 2.5rem;
+   width: 100%;
+}
+
+.profileInfo {
+   display: flex;
+   gap: 1.5rem;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.profileImageWrapper {
+   position: relative;
+   flex-shrink: 0;
+}
+
+.profileImageLabel {
+   display: block;
+   cursor: pointer;
+}
+
+.profileImage {
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.profileImageFallback {
+   width: 6rem;
+   height: 6rem;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #1b0d0f;
+   color: #fff;
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+
+.profileDetails h2 {
+   font-size: 1.5rem;
+   color: #1b0d0f;
+   margin: 0 0 0.5rem 0;
+}
+
+.profileDetails p {
+   color: #9a4c52;
+   margin: 0;
+   font-size: 1rem;
+}
+
+.section {
+   padding: 1.5rem;
+   background-color: #f9f8f8;
+   border-radius: 0.5rem;
+   width: 100%;
+   box-sizing: border-box;
+}
+
+.section h3 {
+   font-size: 1.25rem;
+   color: #9a4c52;
+   margin: 0 0 1rem 0;
+}
+
+.toggleContainer {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 0.75rem;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+}
+
+.toggleContainer label {
+   color: #1b0d0f;
+   font-size: 1rem;
+}
+
+.description {
+   color: #9a4c52;
+   margin: 0.5rem 0 1rem 0;
+   font-size: 0.875rem;
+   line-height: 1.4;
+}
+
+.dropdown {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+   width: 100%;
+}
+
+.select {
+   padding: 0.75rem;
+   font-size: 1rem;
+   color: #1b0d0f;
+   border: 1px solid #ddd;
+   border-radius: 0.375rem;
+   width: 100%;
+   max-width: 300px;
+   background-color: white;
+   cursor: pointer;
+}
+
+.accountSetting {
+   display: flex;
+   flex-direction: column;
+   gap: 0.75rem;
+}
+
+.accountSettingContent {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 1.25rem;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+}
+
+.accountSettingContent label {
+   font-size: 1rem;
+   color: #1b0d0f;
+   flex-grow: 1;
+}
+
+.accountSettingContent p {
+   font-size: 0.875rem;
+   color: #9a4c52;
+   margin: 0;
+   width: 100%;
+}
+
+.iconContainer {
+   display: flex;
+   align-items: center;
+}
+
+.iconContainer svg {
+   width: 1.75rem;
+   height: 1.75rem;
+   fill: #1b0d0f;
+}
+
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 51px;
+   height: 31px;
+}
+
+.switch input {
+   opacity: 0;
+   width: 0;
+   height: 0;
+}
+
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #f3e7e8;
+   transition: 0.4s;
+   border-radius: 2.125rem;
+}
+
+.slider:before {
+   position: absolute;
+   content: "";
+   height: 1.4375rem;
+   width: 1.4375rem;
+   left: 0.25rem;
+   bottom: 0.25rem;
+   background-color: white;
+   transition: 0.4s;
+   border-radius: 50%;
+}
+
+input:checked + .slider {
+   background-color: #2196f3;
+}
+
+input:focus + .slider {
+   box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+   transform: translateX(1.25rem);
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+   .header h1 {
+      font-size: 1.75rem;
+   }
+
+   .profileImage,
+   .profileImageFallback {
+      width: 5rem;
+      height: 5rem;
+      font-size: 2rem;
+   }
+
+   .profileDetails h2 {
+      font-size: 1.25rem;
+   }
+}
+@media (max-width: 810px) {
+   .toggleContainer {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .description {
+      margin: 0;
+   }
+}
+
+@media (max-width: 768px) {
+   .header {
+      margin-bottom: 1.5rem;
+   }
+
+   .header h1 {
+      font-size: 1.5rem;
+   }
+
+   .profileInfo {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+   }
+
+   .profileImage,
+   .profileImageFallback {
+      width: 4.5rem;
+      height: 4.5rem;
+      font-size: 1.75rem;
+   }
+
+   .profileDetails h2 {
+      font-size: 1.25rem;
+   }
+
+   .section {
+      padding: 1.25rem;
+   }
+
+   .section h3 {
+      font-size: 1.125rem;
+   }
+
+   .select {
+      max-width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   .profile {
+      padding: 1rem 0.5rem;
+   }
+
+   .header h1 {
+      font-size: 1.375rem;
+   }
+
+   .profileImage,
+   .profileImageFallback {
+      width: 4rem;
+      height: 4rem;
+      font-size: 1.5rem;
+   }
+
+   .profileDetails h2 {
+      font-size: 1.125rem;
+   }
+
+   .profileDetails p {
+      font-size: 0.875rem;
+   }
+
+   .section {
+      padding: 1rem;
+   }
+
+   .section h3 {
+      font-size: 1rem;
+      margin-bottom: 0.75rem;
+   }
+
+   .toggleContainer label,
+   .accountSettingContent label {
+      font-size: 0.9375rem;
+   }
+
+   .description,
+   .accountSettingContent p {
+      font-size: 0.8125rem;
+   }
+
+   .select {
+      padding: 0.625rem;
+      font-size: 0.875rem;
+   }
+}

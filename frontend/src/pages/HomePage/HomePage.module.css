@@ -1,0 +1,148 @@
+.container {
+   max-width: 100%;
+   margin: 0 auto;
+   font-family: Arial, sans-serif;
+   position: relative; /* Это создаст контекст для абсолютного позиционирования */
+}
+
+.heroSection {
+   background-image: url("/images/home.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 600px;
+   padding: 60px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   position: relative;
+   color: white; /* Если текст должен быть светлым на фоне изображения */
+}
+
+/* Затемнение фона для лучшей читаемости текста */
+.heroSection::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.3); /* Полупрозрачный черный */
+   z-index: 0;
+}
+
+/* Все элементы внутри heroSection должны быть поверх затемнения */
+.heroSection > * {
+   position: relative;
+   z-index: 1;
+}
+
+.breadcrumbs {
+   color: #fff;
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+
+.mainTitle {
+   font-size: 28px;
+   color: #000;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.cities {
+   display: flex;
+   gap: 20px;
+}
+
+.city {
+   font-size: 20px;
+   color: #fff;
+   font-weight: bold;
+   cursor: pointer;
+   text-decoration: underline;
+}
+
+.city:hover {
+   color: #ccc;
+}
+
+.content {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+/* Остальные стили остаются такими же, как в предыдущем примере */
+.contactBlock {
+   background-color: #f5f5f5;
+   padding: 30px;
+   border-radius: 8px;
+   margin-bottom: 40px;
+}
+
+.contactTitle {
+   font-size: 24px;
+   color: #000;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+}
+
+.contactText {
+   font-size: 16px;
+   color: #666;
+   margin-bottom: 15px;
+}
+
+.phone {
+   font-size: 20px;
+   color: #ed2939;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+
+.contactButton {
+   background-color: #ed2939;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.contactButton:hover {
+   background-color: #ed2939;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+   .heroSection {
+      padding: 20px;
+      min-height: 50vh;
+   }
+
+   .mainTitle {
+      font-size: 24px;
+   }
+
+   .cities {
+      flex-direction: column;
+      gap: 10px;
+   }
+
+   .contactBlock {
+      padding: 20px;
+   }
+
+   .contactTitle {
+      font-size: 20px;
+   }
+
+   .contactButton {
+      padding: 15px;
+   }
+}

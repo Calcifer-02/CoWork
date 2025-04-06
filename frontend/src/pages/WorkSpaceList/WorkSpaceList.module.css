@@ -1,0 +1,275 @@
+.workspaces {
+   display: grid;
+   grid-template-columns: repeat(1, minmax(280px, 1fr));
+   gap: 10px;
+   margin-bottom: 50px;
+}
+
+.workspaceCard {
+   display: flex; /* Используем flex для расположения элементов */
+   flex-direction: row; /* Изображение слева, описание справа */
+   gap: 20px;
+   border: 1px solid #e0e0e0;
+
+   padding: 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+   background: #fff;
+   border: 1px solid #eaeaea;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.workspaceCard:hover {
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.workspaceTitle {
+   color: #111;
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+   transition: color 0.3s ease;
+}
+
+.workspaceCard:hover .workspaceTitle {
+   color: #111;
+}
+
+.workspaceProvider {
+   font-weight: 600;
+   color: #666;
+   margin-bottom: 8px;
+}
+
+.workspaceTypes {
+   color: #666;
+   margin-bottom: 15px;
+   line-height: 1.4;
+}
+
+.workspacePrice {
+   font-weight: 600;
+   color: #ed2939;
+   margin-bottom: 15px;
+}
+
+.amenities {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 8px;
+}
+
+.amenities span {
+   background: #f5f5f5;
+   padding: 4px 10px;
+   border-radius: 20px;
+   font-size: 0.8rem;
+   color: #555;
+}
+
+.contactForm {
+   background: #f9f9f9;
+   padding: 40px;
+   border-radius: 8px;
+}
+
+.formTitle {
+   font-size: 1.8rem;
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.formRow {
+   display: flex;
+   gap: 20px;
+}
+
+.formGroup {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+}
+
+.formGroup label {
+   margin-bottom: 8px;
+   font-weight: 500;
+   color: #555;
+}
+
+.formGroup input,
+.formGroup select {
+   padding: 12px 15px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-size: 1rem;
+}
+
+.submitButton {
+   background: #ed2939;
+   color: white;
+   border: none;
+   padding: 15px 25px;
+   font-size: 1rem;
+   font-weight: 600;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-top: 20px;
+   align-self: center;
+   transition: background 0.3s ease;
+}
+
+.workspaceImage {
+   width: 100%; /* Изображение растягивается на всю ширину контейнера */
+   height: 100%; /* Изображение растягивается по высоте контейнера */
+   object-fit: cover; /* Растягиваем изображение, сохраняя его пропорции, заполняя контейнер */
+}
+
+.imageContainer {
+   flex: 0 0 220px; /* Устанавливаем фиксированную ширину для контейнера с изображением */
+   height: 220px; /* Задаем высоту, чтобы изображения были квадратными */
+   overflow: hidden; /* Скрываем части изображения, выходящие за пределы контейнера */
+}
+
+.textContent {
+   flex: 1; /* Оставляем остальную часть для описания */
+}
+
+.submitButton:hover {
+   background: #ed2939;
+}
+
+.contactButton {
+   background-color: #ed2939;
+   color: white;
+   border: none;
+   padding: 12px 24px;
+   font-size: 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-left: 20px;
+}
+
+.container {
+   display: flex;
+   height: 90vh;
+   width: 100%;
+   margin-bottom: 40px;
+   position: relative;
+}
+
+.leftPanel {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   overflow-y: auto;
+   padding: 20px;
+   box-sizing: border-box;
+}
+
+.mapContainer {
+   flex: 1;
+   height: 100%;
+   width: 50%;
+   min-height: 500px;
+}
+
+.contactForm {
+   margin-top: auto;
+   padding: 20px;
+   background: #f5f5f5;
+   border-radius: 8px;
+}
+
+@media (max-width: 1200px) {
+   .workspaceCard {
+      flex-direction: column; /* Меняем направление на колонку */
+      gap: 1px; /* Уменьшаем расстояние между изображением и текстом */
+   }
+
+   .imageContainer {
+      width: 100%; /* Изображение будет занимать 100% ширины */
+      height: 250px; /* Устанавливаем высоту контейнера на мобильных устройствах */
+   }
+
+   .workspaceImage {
+      height: 100%; /* Изображение растягивается по высоте контейнера */
+   }
+}
+
+@media (max-width: 768px) {
+   .container {
+      flex-direction: column; /* Меняем направление на колонку */
+      height: auto;
+   }
+
+   .mapContainer {
+      width: 100%;
+      height: 20vh;
+      min-height: 300px;
+      order: 2; /* Карта будет отображаться после списка */
+      position: static; /* Убираем абсолютное позиционирование */
+      z-index: 0; /* Убираем перекрытие элементов */
+   }
+
+   .leftPanel {
+      order: 1; /* Список будет идти первым */
+      padding: 15px;
+      overflow-y: visible;
+   }
+
+   .workspaces {
+      margin-bottom: 30px;
+   }
+
+   .contactButton {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+   }
+
+   .formRow {
+      flex-direction: column;
+      gap: 15px;
+   }
+
+   .workspaces {
+      grid-template-columns: 1fr;
+   }
+}
+
+.noResults {
+   text-align: center;
+   padding: 2rem;
+   font-size: 1.2rem;
+   color: #666;
+   grid-column: 1 / -1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1rem;
+}
+
+.noResults svg {
+   width: 48px;
+   height: 48px;
+   color: #ccc;
+}
+
+.clearFiltersButton {
+   margin-top: 1rem;
+   background: none;
+   border: none;
+   color: #2563eb;
+   cursor: pointer;
+   font-size: 1rem;
+}
+
+.clearFiltersButton:hover {
+   text-decoration: underline;
+}

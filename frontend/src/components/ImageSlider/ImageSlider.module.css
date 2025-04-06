@@ -1,0 +1,152 @@
+.sliderContainer {
+   margin-bottom: 2rem;
+}
+
+.mainImageContainer {
+   position: relative;
+   width: 100%;
+   height: 24rem;
+   border-radius: 0.5rem;
+   overflow: hidden;
+   margin-bottom: 1rem;
+}
+
+.mainImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   cursor: pointer; /* Указатель на клик */
+}
+
+.navButton {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(255, 255, 255, 0.7);
+   border: none;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   font-size: 1.5rem;
+   color: #111827;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.2s;
+}
+
+.navButton:hover {
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.nextButton {
+   right: 1rem;
+}
+
+.thumbnailContainer {
+   display: flex;
+   gap: 0.5rem;
+   overflow-x: auto;
+   padding-bottom: 0.5rem;
+}
+
+.thumbnail {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 0.25rem;
+   border: 2px solid transparent;
+   padding: 0;
+   background: none;
+   cursor: pointer;
+   flex-shrink: 0;
+}
+
+.thumbnail:hover {
+   border-color: #d1d5db;
+}
+
+.activeThumbnail {
+   border-color: #2563eb;
+}
+
+.thumbnailImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 0.2rem;
+}
+
+/* Стили для модального окна */
+.modalOverlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 1000;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+}
+
+.modal {
+   background: #fff;
+   width: 80%;
+   max-width: 800px;
+   position: relative;
+}
+
+.closeButton {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   background: transparent;
+   border: none;
+   font-size: 24px;
+   cursor: pointer;
+   color: #111827;
+}
+
+.modalImageContainer {
+   position: relative;
+   width: 100%;
+   height: 60vh;
+}
+
+.modalImage {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.navButton {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(255, 255, 255, 0.7);
+   border: none;
+   width: 3rem;
+   height: 3rem;
+   border-radius: 50%;
+   font-size: 1.5rem;
+   color: #111827;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.navButton:hover {
+   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navButton:first-child {
+   left: 1rem;
+}
+
+.navButton:last-child {
+   right: 1rem;
+}

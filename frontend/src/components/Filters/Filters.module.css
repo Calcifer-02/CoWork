@@ -1,0 +1,86 @@
+.filtersContainer {
+   width: 100%;
+   background-color: #e8cfd1;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   padding: 0 20px;
+   box-sizing: border-box;
+}
+
+.filterRow {
+   display: flex;
+   gap: 12px;
+   align-items: center;
+   width: 100%;
+   overflow-x: auto;
+   scrollbar-width: none; /* Для Firefox */
+   -ms-overflow-style: none; /* Для IE и Edge */
+}
+
+.filterRow::-webkit-scrollbar {
+   display: none;
+}
+
+/* .searchWrapper {
+   flex: 1;
+   min-width: 200px;
+   max-width: 300px;
+} */
+
+.filterGroup {
+   flex: 0 0 auto; /* Важно: запрещаем растягивание/сжатие */
+   min-width: 180px; /* Минимальная ширина селекта */
+   position: relative;
+}
+
+.applyButton {
+   background-color: #ed2939;
+   color: white;
+   border: none;
+   border-radius: 15px;
+   padding: 12px 20px;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   flex-shrink: 0; /* Запрещаем сжатие кнопки */
+}
+
+.applyButton:hover {
+   background-color: #bd212e;
+}
+
+.clearButton {
+   background: none;
+   border: none;
+   color: #ed2939;
+   font-size: 13px;
+   cursor: pointer;
+   padding: 8px 12px;
+   border-radius: 4px;
+   transition: background-color 0.2s;
+   white-space: nowrap;
+   height: 36px;
+   flex-shrink: 0; /* Запрещаем сжатие кнопки */
+}
+
+.clearButton:hover {
+   background-color: #f2e8e8;
+}
+
+/* Убираем скроллбар, но оставляем возможность скролла */
+.filterRow::-webkit-scrollbar {
+   display: none;
+}
+
+/* Для мобильных устройств - чтобы не терялись элементы */
+@media (max-width: 768px) {
+   .filterGroup {
+      min-width: 100px;
+   }
+   .filterSelect {
+      padding: 6px 25px 6px 8px;
+      font-size: 12px;
+   }
+}

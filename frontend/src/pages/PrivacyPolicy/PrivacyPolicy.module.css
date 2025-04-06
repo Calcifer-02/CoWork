@@ -1,0 +1,52 @@
+/* Общие стили */
+.container {
+   font-family: Arial, sans-serif;
+   line-height: 1.6;
+   margin: 0 auto;
+   max-width: 1200px;
+   padding: 20px;
+}
+
+/* Header */
+.header h1 {
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+
+/* Introduction */
+.introduction {
+   margin-bottom: 30px;
+}
+
+/* Разделы */
+.section {
+   margin-bottom: 30px;
+}
+
+.sectionTitle {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+}
+
+.sectionContent {
+   font-size: 1rem;
+   color: #333;
+}
+
+/* Footer */
+.footer {
+   text-align: center;
+   margin-top: 40px;
+   font-size: 0.9rem;
+   color: #666;
+}
+
+.footer a {
+   color: #007bff;
+   text-decoration: none;
+}
+
+.footer a:hover {
+   text-decoration: underline;
+}
