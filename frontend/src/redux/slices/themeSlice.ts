@@ -1,5 +1,5 @@
 // src/store/slices/themeSlice.ts
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 interface ThemeState {
    theme: "light" | "dark";

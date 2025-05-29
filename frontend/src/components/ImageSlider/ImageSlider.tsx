@@ -10,8 +10,8 @@ interface ImageSliderProps {
 }
 
 export const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
-   const [currentIndex, setCurrentIndex] = useState(0); // Индекс для обычного слайдера
-   const [fullscreenIndex, setFullscreenIndex] = useState<number | null>(null); // Индекс для полноэкранного слайдера
+   const [currentIndex, setCurrentIndex] = useState(0);
+   const [fullscreenIndex, setFullscreenIndex] = useState<number | null>(null);
 
    const nextSlide = () => {
       setCurrentIndex((prevIndex) =>

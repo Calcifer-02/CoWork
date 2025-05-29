@@ -10,9 +10,7 @@ export default function HomePage() {
          <div className={styles.filterContainer}>
             <FilterWindow />
          </div>
-         {/* Остальной контент */}
          <div className={styles.content}>
-            {/* Контактный блок */}
             <div className={styles.contactBlock}>
                <h1 className={styles.mainTitle}>НАЙТИ РАБОЧИЕ ПОМЕЩЕНИЯ</h1>
                <h2 className={styles.contactTitle}>СВЯЖИТЕСЬ С НАМИ СЕГОДНЯ</h2>

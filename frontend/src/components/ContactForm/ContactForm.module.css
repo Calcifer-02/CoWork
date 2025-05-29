@@ -10,6 +10,7 @@
    flex-direction: column;
    justify-content: center;
    box-sizing: border-box; /* Важно для правильного расчёта ширины */
+   font-family: B612 Mono, monospace;
 }
 
 .formTitle {
@@ -22,7 +23,7 @@
 .contactForm {
    display: flex;
    flex-direction: column;
-   gap: 1rem; /* Заменяет margin-bottom для formGroup */
+   gap: 1rem;
 }
 
 .formGroup {

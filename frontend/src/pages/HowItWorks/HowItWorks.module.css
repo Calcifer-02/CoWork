@@ -1,0 +1,90 @@
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 2rem;
+   font-family: B612 Mono, monospace;
+}
+
+.tabs {
+   display: flex;
+   justify-content: center; /* Центрируем табы */
+   border-bottom: 1px solid #ddd;
+   margin-bottom: 2rem;
+}
+
+.tab {
+   padding: 1rem 2rem;
+   background: none;
+   border: none;
+   cursor: pointer;
+   font-size: 1rem;
+   color: #666;
+   position: relative;
+}
+
+.tab.active {
+   color: #000;
+   font-weight: bold;
+   font-family: B612 Mono, monospace;
+}
+
+.tab.active::after {
+   content: "";
+   position: absolute;
+   bottom: -1px;
+   left: 0;
+   right: 0;
+   height: 2px;
+   background-color: #000;
+}
+
+.tabContent {
+   padding: 1rem 0;
+}
+
+.businessContent .title {
+   font-size: 2rem;
+   margin-bottom: 1.5rem;
+   font-weight: bold;
+}
+
+.businessContent .description {
+   font-size: 1.2rem;
+   margin-bottom: 2rem;
+   line-height: 1.6;
+}
+
+.feature {
+   margin-bottom: 3rem;
+}
+
+.featureTitle {
+   font-size: 1.5rem;
+   margin-bottom: 1rem;
+}
+
+.featureList {
+   margin-left: 1.5rem;
+   margin-bottom: 1.5rem;
+   line-height: 1.6;
+   list-style: none; /* Убираем маркеры списка */
+}
+
+.featureList li {
+   margin-bottom: 0.5rem;
+}
+
+.ctaButton {
+   background-color: #ed2939;
+   color: white;
+   border: none;
+   padding: 0.8rem 1.5rem;
+   font-size: 1rem;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+.ctaButton:hover {
+   background-color: #c82333;
+}

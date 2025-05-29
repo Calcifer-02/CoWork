@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import routes from "../src/app/router/router"; // Импортируем маршруты
-import store from "./redux/store/store";
+import routes from "../src/app/router/router";
+
 import "./App.css";
 function App() {
    return (

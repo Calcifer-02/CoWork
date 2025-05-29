@@ -30,11 +30,12 @@ const FilterWindow = () => {
    return (
       <div className={styles.filterWindow}>
          <h2 className={styles.filterTitle}>
-            For all the ways you work, we're here
+            Для всех способов вашей работы, мы здесь
          </h2>
          <p className={styles.filterSubtitle}>
-            From turnkey offices to co-working, meeting rooms, and technology,
-            explore workspace solutions made for teams of all sizes.
+            От готовых офисов до совместной работы, переговорных и технологий —
+            узнайте о решениях для рабочего пространства, созданных для команд
+            любого размера.
          </p>
 
          <div className={styles.filterControls}>
@@ -69,7 +70,7 @@ const FilterWindow = () => {
                onClick={handleStartClick}
                disabled={!selectedLocation && !selectedWorkspaceType}
             >
-               Start
+               Поиск
             </button>
          </div>
       </div>

@@ -2,6 +2,7 @@ import styles from "./Profile.module.css";
 import NotificationSetting from "./NotificationSetting"; // Импортируем новый компонент
 import AccountSetting from "./AccountSetting"; // Импортируем компонент для Account Setting
 import { useState } from "react";
+import { Button } from "../../components/Button/Button";
 
 const Profile = () => {
    const [profileImage, setProfileImage] = useState<string>(""); // Состояние для хранения URL изображения
@@ -29,12 +30,10 @@ const Profile = () => {
    return (
       <div className={styles.profile}>
          <header className={styles.header}>
-            <h1>Account</h1>
+            <h1>Аккаунт</h1>
          </header>
-
          <section className={styles.profileSection}>
             <div className={styles.profileInfo}>
-               {/* Если изображение не выбрано, показываем первую букву имени */}
                <div className={styles.profileImageWrapper}>
                   <label
                      htmlFor="profile-image-upload"
@@ -65,30 +64,31 @@ const Profile = () => {
 
                <div className={styles.profileDetails}>
                   <h2>{name}</h2>
-                  <p>Male, age 30</p>
+                  <p>02.calcifer@gmail.com</p>
+                  <Button variant="text">Выйти из аккаунта</Button>
                </div>
             </div>
 
             <div className={styles.section}>
-               <h3>Notifications</h3>
+               <h3>Уведомления</h3>
                <NotificationSetting
-                  label="Booking reminders and confirmations"
-                  description="Receive a message when the room or desk booking is about to begin, and when bookings are confirmed or changed."
+                  label="Напоминания и подтверждения бронирования"
+                  description="Получайте сообщения, когда начнется бронирование номера или стола, а также когда бронирования будут подтверждены или изменены."
                />
                <NotificationSetting
-                  label="Promotions, offers and more"
-                  description="Receive relevant promotional and activity-related notifications."
+                  label="Акции, предложения и многое другое"
+                  description="Получайте соответствующие рекламные и связанные с мероприятиями уведомления."
                />
                <NotificationSetting
-                  label="Building and community management updates"
-                  description="Including important building information and current events."
+                  label="Обновления по строительству и управлению сообществом"
+                  description="Включая важную информацию о здании и текущих событиях."
                />
             </div>
 
             <div className={styles.section}>
                <h3>Язык</h3>
                <div className={styles.dropdown}>
-                  <label>Choose your preferred language</label>
+                  <label>Выберите предпочитаемый язык</label>
                   <select className={styles.select}>
                      <option>Русский</option>
                      <option>English</option>
@@ -98,21 +98,21 @@ const Profile = () => {
             </div>
 
             <div className={styles.section}>
-               <h3>Theme</h3>
+               <h3>Тема</h3>
                <div className={styles.dropdown}>
-                  <label>Choose your preferred theme</label>
+                  <label>Выберите предпочтительную тему</label>
                   <select className={styles.select}>
-                     <option>Light</option>
-                     <option>Dark</option>
+                     <option>Светлая</option>
+                     <option>Темная</option>
                   </select>
                </div>
             </div>
 
             <div className={styles.section}>
-               <h3>Account Security</h3>
+               <h3>Безопасность аккаунта</h3>
                <AccountSetting
-                  label="Login & security"
-                  description="Email and password"
+                  label="Логин и безопасность"
+                  description="Управление логином и безопасностью аккаунта."
                   icon={
                      <svg
                         xmlns="http://www.w3.org/2000/svg"

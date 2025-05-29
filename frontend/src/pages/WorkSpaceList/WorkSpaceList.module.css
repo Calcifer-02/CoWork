@@ -3,6 +3,7 @@
    grid-template-columns: repeat(1, minmax(280px, 1fr));
    gap: 10px;
    margin-bottom: 50px;
+   font-family: B612 Mono, monospace;
 }
 
 .workspaceCard {

@@ -77,8 +77,8 @@ export const workspaces: Workspace[] = [
    {
       id: 2,
       location: "Санкт-Петербург",
-      title: "Creative Space",
-      provider: "Creative Networks",
+      title: "PARTA",
+      provider: "PARTA",
       coords: [59.93428, 30.335098], // Санкт-Петербург
       price: "750 ₽/час (дневной тариф)",
       description:
@@ -99,12 +99,24 @@ export const workspaces: Workspace[] = [
       images: [
          {
             id: "1",
-            url: "https://i.pinimg.com/736x/c8/b6/33/c8b6337757992b2d470611736191923c.jpg",
-            isPrimary: true, // Главное изображение
+            url: "https://www.kovorkingi.ru/data/files/img/std/1000000/10000/9671-parta-1d306e3b6f3d_959x720.webp",
+            isPrimary: true,
          },
          {
             id: "2",
             url: "https://i.pinimg.com/736x/b3/b6/33/b3b63323b67235e6fe39619b23259cc3.jpg",
+         },
+         {
+            id: "3",
+            url: "https://www.kovorkingi.ru/data/files/img/std/1000000/10000/9684-severnaya-dolina-begovaya-61d31ba2a094.jpg",
+         },
+         {
+            id: "4",
+            url: "https://www.kovorkingi.ru/data/files/img/std/1000000/10000/9670-parta-336c2f28e1c8.jpg",
+         },
+         {
+            id: "5",
+            url: "https://www.kovorkingi.ru/data/files/img/std/1000000/10000/9672-parta-fdbdff155257_959x720.webp",
          },
       ],
    },

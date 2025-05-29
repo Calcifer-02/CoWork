@@ -117,7 +117,7 @@ const Building = ({ yandexMapsApiKey }: BuildingProps) => {
                      <span className={styles.ratingText}>4.5</span>
                   </div>
                   <span className={styles.divider}>|</span>
-                  <span className={styles.reviewCount}>32 reviews</span>
+                  <span className={styles.reviewCount}>32 отзыва</span>
                   <span className={styles.divider}>|</span>
                   <span className={styles.location}>{workspace.location}</span>
                </div>
@@ -127,7 +127,7 @@ const Building = ({ yandexMapsApiKey }: BuildingProps) => {
 
                {/* Description */}
                <section className={styles.descriptionSection}>
-                  <h2 className={styles.sectionTitle}>About this space</h2>
+                  <h2 className={styles.sectionTitle}>Об этом пространстве</h2>
                   <p className={styles.descriptionText}>
                      {workspace.description}
                   </p>
@@ -138,7 +138,7 @@ const Building = ({ yandexMapsApiKey }: BuildingProps) => {
 
                {/* Amenities */}
                <section className={styles.amenitiesSection}>
-                  <h2 className={styles.sectionTitle}>Amenities</h2>
+                  <h2 className={styles.sectionTitle}>Удобства</h2>
                   <div className={styles.amenitiesGrid}>
                      {workspace.amenities.map((amenity, index) => (
                         <div key={index} className={styles.amenityItem}>
@@ -160,7 +160,7 @@ const Building = ({ yandexMapsApiKey }: BuildingProps) => {
                      ))}
                   </div>
                   <Button variant="text" className={styles.viewAllButton}>
-                     View all amenities
+                     Просмотреть все удобства
                   </Button>
                </section>
             </div>
@@ -178,9 +178,9 @@ const Building = ({ yandexMapsApiKey }: BuildingProps) => {
 
                {/* Price box */}
                <div className={styles.priceBox}>
-                  <h3 className={styles.priceTitle}>Pricing</h3>
+                  <h3 className={styles.priceTitle}>Ценообразование</h3>
                   <p className={styles.priceValue}>{workspace.price}</p>
-                  <p className={styles.priceNote}>Flexible plans available</p>
+                  <p className={styles.priceNote}>Доступны гибкие планы</p>
                </div>
             </div>
          </div>

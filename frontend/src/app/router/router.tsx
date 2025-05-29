@@ -7,6 +7,11 @@ import PrivacyPolicy from "../../pages/PrivacyPolicy/PrivacyPolicy";
 import WorkspaceList from "../../pages/WorkSpaceList/WorkSpaceList";
 import Building from "../../pages/Building/Building";
 import TermsOfService from "../../pages/TermsOfService/TermsOfService";
+import AuthForm from "../../features/client/src/components/AuthForm";
+import HowItWorks from "../../pages/HowItWorks/HowItWorks";
+import Admin from "../../pages/Admin/Admin";
+import AddSpaceForm from "../../pages/AddSpaceForm/AddSpaceForm";
+
 const routes: RouteObject[] = [
    {
       path: "/",
@@ -26,10 +31,14 @@ const routes: RouteObject[] = [
                <Building yandexMapsApiKey="010aa97e-e6ca-48a8-be55-c0e3f5c63ee7" />
             ),
          },
+
+         { path: "/register", element: <AuthForm /> },
+         { path: "/how-it-works", element: <HowItWorks /> },
          { path: "/privacy-policy", element: <PrivacyPolicy /> },
          { path: "/terms-of-service", element: <TermsOfService /> },
-
+         { path: "/add-form", element: <AddSpaceForm /> },
          { path: "*", element: <NotFoundPage /> },
+         { path: "/admin", element: <Admin /> },
       ],
    },
 ];

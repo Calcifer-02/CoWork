@@ -1,0 +1,97 @@
+.formContainer {
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 20px;
+   font-family: B612 Mono, monospace;
+}
+
+.formContainer h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #333;
+}
+
+.inputField {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+.inputField:focus {
+   outline: none;
+   border-color: #4285f4;
+}
+
+.label {
+   display: block;
+   margin-bottom: 8px;
+   font-size: 14px;
+   color: #333;
+}
+
+.rememberMe {
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.rememberMe input {
+   margin-right: 8px;
+}
+
+.forgotPassword {
+   color: #4285f4;
+   text-decoration: none;
+   font-size: 14px;
+   margin-left: auto;
+}
+
+.primaryButton {
+   width: 100%;
+   padding: 12px;
+   background-color: #ed2939;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+   margin-bottom: 20px;
+}
+
+.primaryButton:hover {
+   background-color: #d32f2f;
+}
+
+.switchFormText {
+   text-align: center;
+   color: #666;
+}
+
+.switchFormLink {
+   color: #4285f4;
+   background: none;
+   border: none;
+   padding: 0;
+   font: inherit;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.switchFormLink:hover {
+   text-decoration: underline;
+}
+
+.errorMessage {
+   color: #d32f2f;
+   background-color: #fde8e8;
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 14px;
+}

@@ -2,6 +2,7 @@
    max-width: 1280px;
    margin: 0 auto;
    padding: 2rem 1rem;
+   font-family: B612 Mono, monospace;
 }
 
 .tabs {
@@ -43,6 +44,7 @@
    font-weight: 700;
    color: var(--text-darkest);
    margin-bottom: 0.5rem;
+   font-family: B612 Mono, monospace;
 }
 
 .ratingContainer {

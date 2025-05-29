@@ -1,8 +1,8 @@
 .container {
    max-width: 100%;
    margin: 0 auto;
-   font-family: Arial, sans-serif;
-   position: relative; /* Это создаст контекст для абсолютного позиционирования */
+   font-family: B612 Mono, monospace;
+   position: relative;
 }
 
 .heroSection {

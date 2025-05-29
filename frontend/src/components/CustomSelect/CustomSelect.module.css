@@ -14,6 +14,7 @@
    background-position: right 10px center;
    background-size: 16px;
    transition: all 0.3s ease; /* Плавные переходы */
+   font-family: B612 Mono, monospace;
 }
 
 .filterSelect:not([value=""]) {

@@ -57,7 +57,7 @@ const BookingForm: React.FC<BookingFormProps> = ({ buttonText, className }) => {
                         ✖
                      </button>
                      <div className={styles.dialogContent}>
-                        <h2>Приходите, чтобы увидеть все своими глазами.</h2>
+                        <h2>Свяжитесь с нами</h2>
 
                         <form className={styles.form}>
                            <div className={styles.inputGroup}>

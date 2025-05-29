@@ -43,13 +43,21 @@ const PrivacyPolicy = () => {
          {/* Footer */}
          <footer className={styles.footer}>
             <p>
-               {privacyPolicyData.footer.includes("calcifer02@gmail.com") ? (
+               {privacyPolicyData.footer.includes("02.calcifer@gmail.com") ? (
                   <>
-                     {privacyPolicyData.footer.split("calcifer02@gmail.com")[0]}
-                     <a href="mailto:calcifer02@gmail.com">
-                        calcifer02@gmail.com
+                     {
+                        privacyPolicyData.footer.split(
+                           "02.calcifer@gmail.com"
+                        )[0]
+                     }
+                     <a href="mailto:02.calcifer@gmail.com">
+                        02.calcifer@gmail.com
                      </a>
-                     {privacyPolicyData.footer.split("calcifer02@gmail.com")[1]}
+                     {
+                        privacyPolicyData.footer.split(
+                           "02.calcifer@gmail.com"
+                        )[1]
+                     }
                   </>
                ) : (
                   privacyPolicyData.footer

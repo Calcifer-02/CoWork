@@ -61,7 +61,7 @@ const Search = () => {
          <input
             ref={inputRef}
             type="text"
-            placeholder="Search"
+            placeholder="Поиск..."
             value={inputValue}
             onChange={handleSearch}
             onBlur={handleBlur}

@@ -66,7 +66,7 @@ const Header = () => {
             {/* Навигация */}
             <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
                <a href="/">Начальная страница</a>
-               <a href="#">Как это работает</a>
+               <a href="/how-it-works">Как это работает</a>
                <a href="/search">Локации</a>
                <a href="#">События</a>
             </nav>
